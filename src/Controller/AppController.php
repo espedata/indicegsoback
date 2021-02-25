@@ -79,7 +79,7 @@ class AppController extends AbstractController
 
             $this->addFlash('notice', 'Mot de passe mis à jour');
 
-           return $this->redirect('http://gso-indices.espedata.fr/#/connexion');
+           return $this->redirect('http://gso-indicestest.espedata.fr/#/connexion');
         } else { 
             return $this->render('email/replace_password.html.twig', ['token' => $token]);
         }
