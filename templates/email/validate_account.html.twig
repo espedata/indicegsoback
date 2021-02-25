@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Renouvellement du mot de passe</title>
+        <style>
+        </style> 
+    </head>
+    <body>
+        <div class="container ">
+            <div>
+                <h5>Vous avez demandé la réinitialisation de votre mot de passe.</h5>
+                <p >Afin de finaliser la modification, veuillez cliquer sur le lien <br/>                
+                    {{ url }}
+                    {# pour que le lien fonctionne, il est indispensable que le lien soit absolu. #}
+                    {#<a href="{{absolute_url(path('resetting', {'id': user.id, 'token': user.token}))}}">Changer le mot de passe</a> #}
+                </p>
+        </div>
+    </body>
+</html>
